@@ -1,0 +1,16 @@
+{
+	"manifest_version": 3,
+	"name": "discord_reacted_get",
+	"version": "1.0.0",
+	"description": "ディスコードのリアクションした人を取得し、コンソールにリスト化・クリップボードにコピーする",
+	"content_scripts": [
+		{
+			"matches": [ "https://discord.com/*" ],
+			"js": [ "content_script.js" ]
+		}
+	],
+	"permissions": [
+		"https://discord.com/channels/*",
+		"clipboard-write"
+	]
+}
