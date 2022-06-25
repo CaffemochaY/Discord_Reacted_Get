@@ -21,7 +21,7 @@ function scrapingWaitingForTheElement(targetElement, waitingTime = 30) {
 
 (async function () {
 	try {
-		await scrapingWaitingForTheElement("span.nickname-1PaREw", 30);
+		await scrapingWaitingForTheElement("span.nickname-1PaREw", 60);
 	} catch (e) {
 		console.log(e);
 	}
